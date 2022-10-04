@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_03._10
 {
@@ -6,7 +6,15 @@ namespace Open_Lab_03._10
     {
         public int GetNumberOfCharsInString(char letter, string str)
         {
-            throw new NotImplementedException();
+            int counter = 0;
+            foreach(char c in str)
+            {
+                if(c == letter)
+                {
+                    counter++;
+                }
+            }
+            return counter;
         }
     }
 }
